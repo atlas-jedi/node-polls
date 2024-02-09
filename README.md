@@ -28,7 +28,7 @@ Node Polls é um sistema backend, construído em Node.js, no qual realiza enquet
 ```
 
 
-## Tecnologias Uitlizadas
+## Tecnologias Utilizadas
 
 - Node.js
 - Fastify
