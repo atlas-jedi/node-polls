@@ -86,17 +86,14 @@ O servidor HTTP é construído com Fastify, um framework web de alta eficiência
 ```
 
 ### Canal de comunicação websocket
-- Protocolo de comunicação websocket [ws://localhost:3333/]
-
-```ws
-  GET /polls/:pollId/results
-```
+- **URL:** `ws://localhost:3333/polls/:pollId/results`
+- **Protocolo**: WebSocket
 
 | Parâmetro   | Tipo       | Descrição                           |
 | :---------- | :--------- | :---------------------------------- |
 | `pollId`    | `string`   | **Obrigatório**. ID da enquete para ouvir as atualizações de score |
 
-O retorno será um objeto com cada item já votado e seu score.
+Este endpoint fornece uma conexão WebSocket para comunicação em tempo real. A partir dessa conexão, o servidor irá enviar atualizações de score de votação especificado em tempo real.
 
 ## Contribuindo
 
